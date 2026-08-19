@@ -9,7 +9,7 @@ print("Number of REAL training images: ", len(real_files))
 print("Number of FAKE training images: ", len(fake_files))
 
 
-fix, axes = plt.subplots(2, 5)
+fig, axes = plt.subplots(2, 5)
 
 for i in range(0,5):
     real_img = Image.open("data/train/REAL/" + real_files[i])
